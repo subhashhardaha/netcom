@@ -25,7 +25,8 @@ SECRET_KEY = '4lev&l02$15m2qvizx268gv5isr+^nrdo8@b6dwefwk%)1f5wl'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
+DEFAULT_PORT = "8080"
 
 
 # Application definition
@@ -37,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'api',
 ]
 
 MIDDLEWARE = [
